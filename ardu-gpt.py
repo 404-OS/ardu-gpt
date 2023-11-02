@@ -8,14 +8,14 @@ from OSExec import OSManager
 class ARDUGPT:
     
     def __init__(self):
+        self.os_exec_manager = OSManager()
         self.arduino_port = str() # Puerto COM
         self.arduino_velocity = int() # Velocidad de transeferencia de datos
         self.arduino_conn = False # Conexion con la placa arduino
         self.arduino_fqbn = str() # Arduino FQBN
-        self.skecth_codes_path = str() # Path para los archivos sketch
-        self.sketch_codes_name = str() # Nombre de los archivos creados
         self.gpt_prompt = str() # Prompt a usar con Chat-GPT
-        self.os_exec_manager = OSManager()
+        self.skecth_codes_path = str(os.getcwd()).replace('\\', '/')+'/sketch_code/' # Path para los archivos sketch
+        self.sketch_codes_name = str('sketch_code.ino') # Nombre de los archivos creados
     
     # Conexion con Arduino
     def get_conn(self):
@@ -110,10 +110,6 @@ ardu_gpt_agent.arduino_fqbn = str('arduino:avr:mega:cpu=atmega2560') # Arduino F
 
 # CHAT-GPT PROMPT
 ardu_gpt_agent.gpt_prompt = str('Crea el codigo sketch.ino necesario para encender un led cada 1 segundo, respondeme solo con el codigo sketch sin añadir ninguna cabecera o palabra mas')
-
-# RUTA Y NOMBRE DE LOS SKETCH CREADOS
-ardu_gpt_agent.skecth_codes_path = str(os.getcwd()).replace('\\', '/')+'/sketch_code/' # Path para los archivos sketch
-ardu_gpt_agent.sketch_codes_name = str('sketch_code.ino') # Nombre de los archivos creados
 
 # INICIAR EL AGENTE
 ardu_gpt_agent.run_agent() # Iniciar el agente
