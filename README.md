@@ -37,6 +37,8 @@ Este proyecto tiene fines educativos y busca proporcionar a los estudiantes una 
 
 Al ejecutar el script, este solicitará automáticamente a CHAT-GPT el código para el circuito. Si la compilación es exitosa, verás un mensaje de éxito. De lo contrario, el sistema intentará nuevamente hasta obtener un código válido.
 
+![Demo running GIF](https://github.com/404-OS/ardu-gpt/blob/main/demo_gif.gif)
+
 ## 🤝 Contribuciones
 Las contribuciones son bienvenidas, especialmente si tienen un enfoque educativo. Si tienes sugerencias, correcciones o mejoras, no dudes en hacer un pull request o abrir un issue.
 
