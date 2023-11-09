@@ -42,5 +42,7 @@ Al ejecutar el script, este solicitará automáticamente a CHAT-GPT el código p
 ## 🤝 Contribuciones
 Las contribuciones son bienvenidas, especialmente si tienen un enfoque educativo. Si tienes sugerencias, correcciones o mejoras, no dudes en hacer un pull request o abrir un issue.
 
+1. AIP Barcelona: https://www.aipbarcelona.com/cursos/master-en-ciberseguridad/
+
 ## 📜 Licencia
 Este proyecto está bajo la licencia GNU GENERAL PUBLIC LICENSE V3. Consulta el archivo LICENSE para más detalles.
